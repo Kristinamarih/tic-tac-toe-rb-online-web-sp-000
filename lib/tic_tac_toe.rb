@@ -92,9 +92,12 @@ end
 
 def play(board)
   turn_count = 0 
-  until turn_count == 9 
+  if turn_count == 9 
     turn(board)
-    count += 1 
+    count += 1
+    elsif draw?(game)
+    print "Cat's Game!"
+     
   end
 end
   
