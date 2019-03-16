@@ -91,14 +91,9 @@ def winner(board)
 end
 
 def play(board)
-  turn_count = 0 
-  if draw?(game)
-    print "Cat's Game!"
-  elsif won?(board)
-    board[won?(board[0])]
-  else turn_count == 9 
-    turn(board)
-    count += 1
+  until over?(board)
+  turn(board)
+  
   end
 end
 
