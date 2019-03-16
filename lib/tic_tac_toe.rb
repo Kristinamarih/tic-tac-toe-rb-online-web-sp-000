@@ -95,9 +95,10 @@ def play(board)
   if turn_count == 9 
     turn(board)
     count += 1
-    elsif draw?(game)
+  if draw?(game)
     print "Cat's Game!"
-     
+  if won?(board)
+    board[won?(board[0])]
   end
 end
   
